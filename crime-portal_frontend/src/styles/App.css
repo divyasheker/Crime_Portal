@@ -1,0 +1,223 @@
+/* ====================== General Body Styling ====================== */
+body {
+  background-color: #f8f9fa;
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #212529;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* ====================== App Wrapper ====================== */
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ====================== Main Content ====================== */
+.main-content {
+  flex: 1;
+  padding: 20px;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* ====================== Typography ====================== */
+h1, h2, h3, h4, h5, h6 {
+  color: #212529;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+p, li {
+  color: #495057;
+  margin-bottom: 12px;
+}
+
+/* ====================== Navbar ====================== */
+.navbar {
+  background: #343a40;
+  padding: 0.8rem 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar a {
+  color: #f8f9fa;
+  margin-right: 1rem;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.navbar a:hover {
+  color: #ffc107;
+  transform: translateY(-2px);
+}
+
+.navbar .btn {
+  transition: all 0.3s ease;
+}
+
+.navbar .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+/* ====================== Footer ====================== */
+footer {
+  background: #343a40;
+  color: #f8f9fa;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.85rem;
+  margin-top: auto;
+}
+
+footer .container .row {
+  margin-bottom: 10px;
+}
+
+footer h5, footer h6 {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+footer p, footer li, footer a {
+  font-size: 0.85rem;
+  margin-bottom: 3px;
+}
+
+footer a {
+  margin-right: 0.3rem;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #ffc107;
+}
+
+/* ====================== Buttons ====================== */
+button, .btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease, transform 0.2s ease;
+}
+
+button:hover, .btn:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Primary button gradient */
+.btn-primary {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #0056b3, #007bff);
+}
+
+/* ====================== Containers & Layout ====================== */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* ====================== Cards ====================== */
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  margin-bottom: 25px;
+  transition: all 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* ====================== Forms ====================== */
+form input, form textarea {
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+  padding: 0.5rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0,123,255,0.3);
+}
+
+/* ====================== Hero Section ====================== */
+.hero-section {
+  padding: 60px 20px;
+  background-color: #e9ecef;
+  border-radius: 12px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.hero-section:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+/* ====================== Links ====================== */
+a {
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ====================== Responsive Adjustments ====================== */
+@media (max-width: 992px) {
+  .navbar .navbar-nav {
+    margin-top: 10px;
+  }
+  .card {
+    margin-bottom: 20px;
+  }
+  .hero-section {
+    padding: 40px 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    padding: 15px;
+  }
+  .btn {
+    padding: 0.45rem 0.8rem;
+  }
+}
+
+/* Make the app-wrapper a flex column */
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* full height of the screen */
+}
+
+/* Ensure routed content grows to fill space */
+.main-content {
+  flex: 1;
+  padding-top: 80px;   /* avoid navbar overlap */
+  padding-bottom: 40px; /* optional extra space above footer */
+}
+

@@ -1,0 +1,218 @@
+# ============================================
+# CRIME PORTAL - COMPREHENSIVE .gitignore
+# ============================================
+
+# ============================================
+# 1. SPRING BOOT BACKEND (Java/Maven)
+# ============================================
+
+# Maven
+crime-portal-backend/target/
+crime-portal-backend/.mvn/
+crime-portal-backend/mvnw
+crime-portal-backend/mvnw.cmd
+crime-portal-backend/pom.xml.tag
+crime-portal-backend/pom.xml.releaseBackup
+crime-portal-backend/pom.xml.versionsBackup
+crime-portal-backend/pom.xml.next
+crime-portal-backend/release.properties
+crime-portal-backend/dependency-reduced-pom.xml
+crime-portal-backend/buildNumber.properties
+crime-portal-backend/.mvn/timing.properties
+crime-portal-backend/.mvn/wrapper/maven-wrapper.jar
+
+# IDE - IntelliJ IDEA
+crime-portal-backend/.idea/
+crime-portal-backend/*.iws
+crime-portal-backend/*.iml
+crime-portal-backend/*.ipr
+crime-portal-backend/out/
+
+# IDE - Eclipse
+crime-portal-backend/.apt_generated
+crime-portal-backend/.classpath
+crime-portal-backend/.factorypath
+crime-portal-backend/.project
+crime-portal-backend/.settings
+crime-portal-backend/.springBeans
+crime-portal-backend/.sts4-cache
+crime-portal-backend/bin/
+
+# Spring Boot
+crime-portal-backend/*.log
+crime-portal-backend/spring.log
+
+# Compiled class files
+crime-portal-backend/**/*.class
+
+# Package Files
+crime-portal-backend/**/*.jar
+crime-portal-backend/**/*.war
+crime-portal-backend/**/*.nar
+crime-portal-backend/**/*.ear
+crime-portal-backend/**/*.zip
+crime-portal-backend/**/*.tar.gz
+crime-portal-backend/**/*.rar
+
+# Virtual machine crash logs
+crime-portal-backend/hs_err_pid*
+
+
+# ============================================
+# 2. REACT FRONTEND (Node.js/npm)
+# ============================================
+
+# Dependencies
+crime-portal_frontend/node_modules/
+crime-portal_frontend/.pnp
+crime-portal_frontend/.pnp.js
+
+# Testing
+crime-portal_frontend/coverage/
+
+# Production build
+crime-portal_frontend/build/
+crime-portal_frontend/dist/
+
+# Misc
+crime-portal_frontend/.DS_Store
+crime-portal_frontend/.env
+crime-portal_frontend/.env.local
+crime-portal_frontend/.env.development.local
+crime-portal_frontend/.env.test.local
+crime-portal_frontend/.env.production.local
+
+# Logs
+crime-portal_frontend/npm-debug.log*
+crime-portal_frontend/yarn-debug.log*
+crime-portal_frontend/yarn-error.log*
+crime-portal_frontend/lerna-debug.log*
+crime-portal_frontend/.pnpm-debug.log*
+
+# Editor directories and files
+crime-portal_frontend/.vscode/*
+!crime-portal_frontend/.vscode/extensions.json
+crime-portal_frontend/.idea
+crime-portal_frontend/*.suo
+crime-portal_frontend/*.ntvs*
+crime-portal_frontend/*.njsproj
+crime-portal_frontend/*.sln
+crime-portal_frontend/*.sw?
+
+# Optional npm cache directory
+crime-portal_frontend/.npm
+
+# Optional eslint cache
+crime-portal_frontend/.eslintcache
+
+
+# ============================================
+# 3. FLASK AI CHATBOT (Python)
+# ============================================
+
+# Virtual Environment
+crime-portal-chatbot/venv/
+crime-portal-chatbot/venv_old_python310/
+crime-portal-chatbot/env/
+crime-portal-chatbot/ENV/
+crime-portal-chatbot/.venv
+
+# Python
+crime-portal-chatbot/**/*.pyc
+crime-portal-chatbot/**/*.pyo
+crime-portal-chatbot/**/*.pyd
+crime-portal-chatbot/**/__pycache__/
+crime-portal-chatbot/**/*.so
+crime-portal-chatbot/**/*.egg
+crime-portal-chatbot/**/*.egg-info/
+crime-portal-chatbot/dist/
+crime-portal-chatbot/build/
+crime-portal-chatbot/.eggs/
+
+# Environment variables
+crime-portal-chatbot/.env
+crime-portal-chatbot/.env.local
+
+# IDE
+crime-portal-chatbot/.vscode/
+crime-portal-chatbot/.idea/
+crime-portal-chatbot/**/*.swp
+crime-portal-chatbot/**/*.swo
+crime-portal-chatbot/**/*~
+
+# Jupyter Notebook
+crime-portal-chatbot/.ipynb_checkpoints
+
+# Flask
+crime-portal-chatbot/instance/
+crime-portal-chatbot/.webassets-cache
+
+# Pytest
+crime-portal-chatbot/.pytest_cache/
+crime-portal-chatbot/.tox/
+
+
+# ============================================
+# 4. GLOBAL/ROOT LEVEL IGNORES
+# ============================================
+
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# IDE/Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+
+
+# ============================================
+# 5. SENSITIVE DATA (NEVER COMMIT)
+# ============================================
+
+# API Keys and Secrets
+**/.env
+**/.env.local
+**/.env.*.local
+**/secrets.json
+**/credentials.json
+**/service-account-key.json
+
+# Database
+**/*.db
+**/*.sqlite
+**/*.sqlite3
+
+# SSH Keys
+**/*.pem
+**/*.key
+**/.ssh/
+
+
+# ============================================
+# 6. OPTIONAL: Documentation/Media
+# ============================================
+
+# Uncomment if you don't want to commit these
+# *.pdf
+# *.mp4
+# *.mov
+# docs/
+
